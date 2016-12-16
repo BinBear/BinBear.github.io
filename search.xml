@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[Hello Hexo]]></title>
       <url>http://BinBear.github.io/2016/10/18/hello-world/</url>
-      <content type="text"><![CDATA[Quick Start新建文章1$ hexo new "My New Post" More info: Writing 开启预览访问端口1$ hexo server More info: Server 生成静态页面至public目录1$ hexo generate More info: Generating 部署服务1$ hexo deploy More info: Deployment]]></content>
+      <content type="text"><![CDATA[Quick Start新建文章1$ hexo new "My New Post" 查看: Writing 开启预览访问端口1$ hexo server 查看: Server 生成静态页面至public目录1$ hexo generate 查看: Generating 部署服务1$ hexo deploy 查看: Deployment 常用命令缩写123$ hexo n #新建文章$ hexo s -g #生成并本地预览$ hexo d -g #生成并上传]]></content>
     </entry>
 
     

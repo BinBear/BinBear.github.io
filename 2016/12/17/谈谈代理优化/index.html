@@ -90,7 +90,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iOS开发,技术小纪," />
 
 
 
@@ -106,16 +106,19 @@
 
 
 
-<meta name="description" content="鱼在温水里会很容易的煮死，毛毛雨会很容易的打湿衣服，因为这些看似没有杀伤力的东西最容易让人丧失警惕。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://BinBear.github.io/categories/index.html">
+<meta name="description" content="协议（protocol）协议是OC的一项特性，与Java的“接口”类似。我们都知道OC不支持多继承，所以我们可以把某个类要实现的一系列方法定义在协议里面。而协议最常见的用途是实现委托模式。
+委托模式委托模式是一种编程设计模式，iOS中用它来实现对象间的通信。委托模式定义一套接口，某个对象若想接受另一个对象的委托，则需遵从此接口，以便成为其“委托对象”。另一个则可以给其委托对象回传一些信息，也可以发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="谈谈代理优化">
+<meta property="og:url" content="http://BinBear.github.io/2016/12/17/谈谈代理优化/index.html">
 <meta property="og:site_name" content="BinBear's Blog">
-<meta property="og:description" content="鱼在温水里会很容易的煮死，毛毛雨会很容易的打湿衣服，因为这些看似没有杀伤力的东西最容易让人丧失警惕。">
-<meta property="og:updated_time" content="2016-12-16T06:40:40.000Z">
+<meta property="og:description" content="协议（protocol）协议是OC的一项特性，与Java的“接口”类似。我们都知道OC不支持多继承，所以我们可以把某个类要实现的一系列方法定义在协议里面。而协议最常见的用途是实现委托模式。
+委托模式委托模式是一种编程设计模式，iOS中用它来实现对象间的通信。委托模式定义一套接口，某个对象若想接受另一个对象的委托，则需遵从此接口，以便成为其“委托对象”。另一个则可以给其委托对象回传一些信息，也可以发">
+<meta property="og:updated_time" content="2016-12-17T15:08:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="鱼在温水里会很容易的煮死，毛毛雨会很容易的打湿衣服，因为这些看似没有杀伤力的东西最容易让人丧失警惕。">
+<meta name="twitter:title" content="谈谈代理优化">
+<meta name="twitter:description" content="协议（protocol）协议是OC的一项特性，与Java的“接口”类似。我们都知道OC不支持多继承，所以我们可以把某个类要实现的一系列方法定义在协议里面。而协议最常见的用途是实现委托模式。
+委托模式委托模式是一种编程设计模式，iOS中用它来实现对象间的通信。委托模式定义一套接口，某个对象若想接受另一个对象的委托，则需遵从此接口，以便成为其“委托对象”。另一个则可以给其委托对象回传一些信息，也可以发">
 
 
 
@@ -136,16 +139,10 @@
 
 
 
-  <link rel="canonical" href="http://BinBear.github.io/categories/"/>
+  <link rel="canonical" href="http://BinBear.github.io/2016/12/17/谈谈代理优化/"/>
 
 
-  <title>
-  
-
-  
-    分类 | BinBear's Blog
-  
-</title>
+  <title> 谈谈代理优化 | BinBear's Blog </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -166,7 +163,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -279,16 +276,172 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
     
-      <div class="category-all-page">
-        <div class="category-all-title">
-            目前共计 2 个分类
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                谈谈代理优化
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-17T14:22:20+08:00" content="2016-12-17">
+              2016-12-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/iOS随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS随笔</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/17/谈谈代理优化/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/17/谈谈代理优化/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
         </div>
-        <div class="category-all">
-          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/iOS随笔/">iOS随笔</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发小集/">开发小集</a><span class="category-list-count">1</span></li></ul>
-        </div>
-      </div>
+      </header>
     
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="协议（protocol）"><a href="#协议（protocol）" class="headerlink" title="协议（protocol）"></a>协议（protocol）</h2><p>协议是OC的一项特性，与Java的“接口”类似。我们都知道OC不支持多继承，所以我们可以把某个类要实现的一系列方法定义在协议里面。而协议最常见的用途是实现委托模式。</p>
+<h3 id="委托模式"><a href="#委托模式" class="headerlink" title="委托模式"></a>委托模式</h3><p>委托模式是一种编程设计模式，iOS中用它来实现对象间的通信。委托模式定义一套接口，某个对象若想接受另一个对象的委托，则需遵从此接口，以便成为其“委托对象”。另一个则可以给其委托对象回传一些信息，也可以发生相关事件时通知委托对象。</p>
+<p>委托模式可以将数据与业务逻辑解耦。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS开发/" rel="tag">#iOS开发</a>
+          
+            <a href="/tags/技术小纪/" rel="tag">#技术小纪</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/18/hello-world/" rel="next" title="Hello Hexo">
+                <i class="fa fa-chevron-left"></i> Hello Hexo
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
   </div>
 
 
@@ -297,6 +450,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/12/17/谈谈代理优化/"
+           data-title="谈谈代理优化" data-url="http://BinBear.github.io/2016/12/17/谈谈代理优化/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -316,8 +477,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/BinBear.png"
@@ -387,6 +557,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#协议（protocol）"><span class="nav-number">1.</span> <span class="nav-text">协议（protocol）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#委托模式"><span class="nav-number">1.1.</span> <span class="nav-text">委托模式</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -483,6 +664,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
 
   
 

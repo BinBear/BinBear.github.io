@@ -4,8 +4,15 @@
   
     
     <entry>
+      <title><![CDATA[谈谈代理优化]]></title>
+      <url>http://BinBear.github.io/2016/12/17/%E8%B0%88%E8%B0%88%E4%BB%A3%E7%90%86%E4%BC%98%E5%8C%96/</url>
+      <content type="text"><![CDATA[协议（protocol）协议是OC的一项特性，与Java的“接口”类似。我们都知道OC不支持多继承，所以我们可以把某个类要实现的一系列方法定义在协议里面。而协议最常见的用途是实现委托模式。 委托模式委托模式是一种编程设计模式，iOS中用它来实现对象间的通信。委托模式定义一套接口，某个对象若想接受另一个对象的委托，则需遵从此接口，以便成为其“委托对象”。另一个则可以给其委托对象回传一些信息，也可以发生相关事件时通知委托对象。 委托模式可以将数据与业务逻辑解耦。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Hello Hexo]]></title>
-      <url>http://BinBear.github.io/2016/10/18/hello-world/</url>
+      <url>http://BinBear.github.io/2016/08/18/hello-world/</url>
       <content type="text"><![CDATA[Quick Start新建文章1$ hexo new "My New Post" 查看: Writing 开启预览访问端口1$ hexo server 查看: Server 生成静态页面至public目录1$ hexo generate 查看: Generating 部署服务1$ hexo deploy 查看: Deployment 常用命令缩写123$ hexo n #新建文章$ hexo s -g #生成并本地预览$ hexo d -g #生成并上传]]></content>
     </entry>
 
